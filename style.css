@@ -1,7 +1,13 @@
 
+body,h1,h2,h3,h4,h5,h6 {font-family: Roboto, sans-serif;}
+
 body {
   background: var(--background);
   color: var(--pure-white);
+}
+
+p {
+  color: var(--text);
 }
 
 button {
@@ -92,6 +98,7 @@ li {
 @media (min-width: 768px) {
   .header .btn-sign-in::after {
     content: 'Sign in with Google';
+    font-weight: bold;
   }
 }
 
@@ -156,6 +163,10 @@ li {
   flex: 1;
   padding-right: 20px;
 } 
+
+.content .text-box .h3-welcome {
+  font-weight: bold;
+}
 
 .content .illustration-box img {
   max-width: 500px;
