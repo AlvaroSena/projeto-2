@@ -23,31 +23,60 @@
   </aside>
 
   <header class="w3-container header">
-    <button class="w3-button w3-xlarge btn-show-sidebar" onclick="w3_open()">&#9776;</button>
-    <div class="d-flex-box">
-      <h1 class="title">js.news</h1>
-      <nav class="w3-bar nav">
-        <ul>
-          <li>
-            <a id="home" href="">Home</a>
-          </li>
-          <li>
-            <a href="">Contato</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="header-content">
+      <button class="w3-button w3-xlarge btn-show-sidebar" onclick="w3_open()">&#9776;</button>
+      <div class="d-flex-box">
+        <h1 class="title">js.news</h1>
+        <nav class="w3-bar nav">
+          <ul>
+            <li>
+              <a id="home" href="">Home</a>
+            </li>
+            <li>
+              <a href="">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <button class="w3-round-xxlarge btn-sign-in">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C14.7236 14.2874 12.7851 15.75 10.5 15.75C7.60069 15.75 5.25 13.3993 5.25 10.5C5.25 7.60069 7.60069 5.25 10.5 5.25C11.8383 5.25 13.0559 5.75487 13.9829 6.57956L16.4579 4.10462C14.8951 2.64819 12.8047 1.75 10.5 1.75C5.66781 1.75 1.75 5.66781 1.75 10.5C1.75 15.3322 5.66781 19.25 10.5 19.25C15.3322 19.25 19.25 15.3322 19.25 10.5C19.25 9.91331 19.1896 9.34062 19.0798 8.78631Z" fill="#FFC107"/>
+          <path d="M2.75888 6.42731L5.63369 8.53563C6.41157 6.60975 8.29544 5.25 10.5 5.25C11.8383 5.25 13.0559 5.75488 13.9829 6.57956L16.4579 4.10463C14.8951 2.64819 12.8048 1.75 10.5 1.75C7.13913 1.75 4.22451 3.64744 2.75888 6.42731Z" fill="#FF3D00"/>
+          <path d="M10.5 19.25C12.7601 19.25 14.8138 18.3851 16.3665 16.9785L13.6583 14.6869C12.7798 15.3523 11.6878 15.75 10.5 15.75C8.22414 15.75 6.2917 14.2988 5.5637 12.2736L2.71033 14.4721C4.15845 17.3057 7.09933 19.25 10.5 19.25Z" fill="#4CAF50"/>
+          <path d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C15.0986 13.2287 14.469 14.0726 13.657 14.6873L13.6583 14.6864L16.3664 16.9781C16.1748 17.1522 19.25 14.875 19.25 10.5C19.25 9.91331 19.1896 9.34063 19.0798 8.78631Z" fill="#1976D2"/>
+        </svg>
+      </button>
     </div>
-
-    <button class="w3-round-xxlarge btn-sign-in">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C14.7236 14.2874 12.7851 15.75 10.5 15.75C7.60069 15.75 5.25 13.3993 5.25 10.5C5.25 7.60069 7.60069 5.25 10.5 5.25C11.8383 5.25 13.0559 5.75487 13.9829 6.57956L16.4579 4.10462C14.8951 2.64819 12.8047 1.75 10.5 1.75C5.66781 1.75 1.75 5.66781 1.75 10.5C1.75 15.3322 5.66781 19.25 10.5 19.25C15.3322 19.25 19.25 15.3322 19.25 10.5C19.25 9.91331 19.1896 9.34062 19.0798 8.78631Z" fill="#FFC107"/>
-        <path d="M2.75888 6.42731L5.63369 8.53563C6.41157 6.60975 8.29544 5.25 10.5 5.25C11.8383 5.25 13.0559 5.75488 13.9829 6.57956L16.4579 4.10463C14.8951 2.64819 12.8048 1.75 10.5 1.75C7.13913 1.75 4.22451 3.64744 2.75888 6.42731Z" fill="#FF3D00"/>
-        <path d="M10.5 19.25C12.7601 19.25 14.8138 18.3851 16.3665 16.9785L13.6583 14.6869C12.7798 15.3523 11.6878 15.75 10.5 15.75C8.22414 15.75 6.2917 14.2988 5.5637 12.2736L2.71033 14.4721C4.15845 17.3057 7.09933 19.25 10.5 19.25Z" fill="#4CAF50"/>
-        <path d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C15.0986 13.2287 14.469 14.0726 13.657 14.6873L13.6583 14.6864L16.3664 16.9781C16.1748 17.1522 19.25 14.875 19.25 10.5C19.25 9.91331 19.1896 9.34063 19.0798 8.78631Z" fill="#1976D2"/>
-      </svg>
-    </button>
   </header>
-  <h1>hello</h1>
+
+  <main>
+    <div class="w3-container">
+      <div class="content">
+        <div class="text-box">
+          <h3>
+            👋 Seja bem-vindo
+          </h3>
+          <h1 class="h1-pitche">
+            Notícias sobre <br> 
+            o mundo do <br>
+            <span class="span-highline">JavaScript</span> 
+          </h1>
+          <p>
+            Garanta o acesso a todas as publicações <br>
+            <span class="span-highline">por R$ 29,90 / mês</span>
+          </p>
+  
+          <button class="w3-round-xxlarge btn-subscribe-now">
+            Assinar agora!
+          </button>
+        </div>
+        <div class="illustration-box">
+          <img src="./assets/illustration.png" alt="Duas pessoas lendo jornal">
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script>
     function w3_open() {
