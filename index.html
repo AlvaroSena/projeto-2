@@ -8,10 +8,25 @@
   <title>JS News</title>
 </head>
 <body>
+
+  <aside class="w3-sidebar w3-bar-block w3-collapse w3-card sidebar-bg" style="width:200px; display: none !important;" id="mySidebar">
+    <button class="w3-bar-item w3-button"
+    onclick="w3_close()">Close &times;</button>
+    <ul style="padding: 0;">
+      <li>
+        <a href="#" class="w3-bar-item">Home</a>
+      </li>
+      <li>
+        <a href="#" class="w3-bar-item">Contato</a>
+      </li>
+    </ul>
+  </aside>
+
   <header class="w3-container header">
+    <button class="w3-button w3-xlarge btn-show-sidebar" onclick="w3_open()">&#9776;</button>
     <div class="d-flex-box">
       <h1 class="title">js.news</h1>
-      <nav class="w3-bar">
+      <nav class="w3-bar nav">
         <ul>
           <li>
             <a id="home" href="">Home</a>
@@ -30,9 +45,19 @@
         <path d="M10.5 19.25C12.7601 19.25 14.8138 18.3851 16.3665 16.9785L13.6583 14.6869C12.7798 15.3523 11.6878 15.75 10.5 15.75C8.22414 15.75 6.2917 14.2988 5.5637 12.2736L2.71033 14.4721C4.15845 17.3057 7.09933 19.25 10.5 19.25Z" fill="#4CAF50"/>
         <path d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C15.0986 13.2287 14.469 14.0726 13.657 14.6873L13.6583 14.6864L16.3664 16.9781C16.1748 17.1522 19.25 14.875 19.25 10.5C19.25 9.91331 19.1896 9.34063 19.0798 8.78631Z" fill="#1976D2"/>
       </svg>
-      Sign in with Google
     </button>
   </header>
   <h1>hello</h1>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+  </script>
 </body>
 </html>

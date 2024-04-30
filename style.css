@@ -18,6 +18,16 @@ a {
   line-height: 75px;
 }
 
+.btn-show-sidebar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn-show-sidebar {
+    display: block;
+  }
+}
+
 #home {
   font-weight: bold;
   color: var(--pure-white);
@@ -41,14 +51,14 @@ a {
   align-items: center;
 }
 
-.header .title {
-  font-weight: bold;
-}
-
 .header .d-flex-box {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.header .d-flex-box .title {
+  font-weight: bold;
 }
 
 .header .d-flex-box nav ul {
@@ -58,7 +68,7 @@ a {
   gap: 12px;
 }
 
-.header .d-flex-box nav ul li {
+li {
   list-style-type: none;
 }
 
@@ -72,6 +82,23 @@ a {
   align-items: center;
   gap: 8px;
   padding: 12px;
+}
+
+@media (min-width: 768px) {
+  .header .btn-sign-in::after {
+    content: 'Sign in with Google';
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+.sidebar-bg {
+  background: var(--card);
 }
 
 :root {
