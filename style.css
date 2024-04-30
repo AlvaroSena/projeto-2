@@ -46,6 +46,11 @@ a {
 
 .header {
   border-bottom: 1px solid var(--divider);
+}
+
+.header-content {
+  max-width: 1120px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,6 +104,62 @@ li {
 
 .sidebar-bg {
   background: var(--card);
+}
+
+.span-highline {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.h1-pitche {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.btn-subscribe-now {
+  background: var(--yellow);
+  color: var(--background);
+  border: none;
+  padding: 12px 32px;
+  font-weight: bold;
+}
+
+.content {
+  max-width: 1120px;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5rem 1rem;
+  }
+
+  .content .illustration-box {
+    order: -1;
+  }
+
+  .content .illustration-box img {
+    display: none;
+  }
+
+  .h1-pitche {
+    font-size: 3rem;
+  }
+}
+
+.content .text-box {
+  flex: 1;
+  padding-right: 20px;
+} 
+
+.content .illustration-box img {
+  max-width: 500px;
+  height: auto;
 }
 
 :root {
