@@ -1,0 +1,87 @@
+
+body {
+  background: var(--background);
+  color: var(--pure-white);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+  padding: 0 0.5rem;
+  height: 75px;
+  line-height: 75px;
+}
+
+#home {
+  font-weight: bold;
+  color: var(--pure-white);
+}
+
+#home::after {
+  content: '';
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  background: var(--yellow);
+}
+
+.header {
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .title {
+  font-weight: bold;
+}
+
+.header .d-flex-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .d-flex-box nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.header .d-flex-box nav ul li {
+  list-style-type: none;
+}
+
+.header .btn-sign-in {
+  margin-left: auto;
+  background: var(--card);
+  color: var(--pure-white);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+}
+
+:root {
+  --background: #020617;
+  --divider: #0F172A;
+  --text: #F1F5F9;
+  --card: #1E293B;
+
+  --pure-white: #FFFF;
+  --yellow: #FACC15;
+  --purple: #9333EA;
+  --pink: #DB2777;
+}
