@@ -258,3 +258,36 @@ li {
 .card-labels-group {
   height: 166px;
 }
+
+.form-container {
+  background: var(--card);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.form-container input {
+  border-radius: 8px;
+  background: var(--background);
+  border: none;
+}
+
+.form-container .btn-send {
+  color: var(--background);
+  background: var(--yellow);
+  font-weight: bold;
+}
+
+.form-header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+#footer {
+  margin-top: 160px;
+  background: var(--card);
+}
