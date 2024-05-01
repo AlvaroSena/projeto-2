@@ -184,3 +184,77 @@ li {
   --purple: #9333EA;
   --pink: #DB2777;
 }
+
+#plans {
+  margin: 80px 0;
+}
+
+#plans .h1-plans {
+  text-align: center;
+  margin: 80px 0;
+  font-weight: bold;
+  font-size: 54px;
+
+}
+
+.d-grid{
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 46px;
+}
+
+@media (max-width: 768px) {
+  .d-grid {
+    grid-template-columns: 1fr;
+  }  
+}
+
+.card{
+  background-color: var(--card);
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+}
+.card h4{
+  margin: 0;
+  font-weight: bold;
+}
+.card-img{
+  position: absolute;
+  height: 48px;
+  width: 120px;
+  right: 0;
+  top: 0;
+}
+.header-plans{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-label{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-subscription {
+  padding: 10px 48px;
+  background: var(--yellow);
+  color: var(--background);
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-labels-group {
+  height: 166px;
+}
