@@ -11,181 +11,142 @@
 </head>
 
 <body>
-  <aside class="w3-sidebar w3-bar-block w3-collapse w3-card sidebar-bg" style="width:200px; display: none !important;"
-    id="mySidebar">
-    <button class="w3-bar-item w3-button" onclick="w3_close()">Close &times;</button>
-    <ul style="padding: 0;">
-      <li>
-        <a href="#" class="w3-bar-item">Home</a>
-      </li>
-      <li>
-        <a href="#" class="w3-bar-item">Contato</a>
-      </li>
-    </ul>
-  </aside>
-
-  <header class="w3-container header">
-    <div class="header-content">
-      <button class="w3-button w3-xlarge btn-show-sidebar" onclick="w3_open()">&#9776;</button>
-      <div class="d-flex-box">
-        <h1 class="title">js.news</h1>
-        <nav class="w3-bar nav">
-          <ul>
-            <li>
-              <a id="home" href="">Home</a>
-            </li>
-            <li>
-              <a href="">Contato</a>
-            </li>
-          </ul>
-        </nav>
+  <header class="w3-container" style="border-bottom: 1px solid #0F172A;">
+    <div style="max-width: 1120px; margin: 0 auto;">
+      <div class="w3-row">
+        <div class="w3-quarter">
+          <p style="font-size: 36px; font-weight: bold; margin: 10px;">js.news</p>
+        </div>        
+        <div class="w3-threequarter">
+          <nav class="w3-bar" style="margin: 16px 0;">
+            <a class="w3-bar-item w3-btn" href="" style="font-weight: bold;">Home</a>
+            <a class="w3-bar-item w3-btn" href="">Contato</a>
+          </nav>
+        </div>
       </div>
-
-      <button class="w3-round-xxlarge btn-sign-in">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C14.7236 14.2874 12.7851 15.75 10.5 15.75C7.60069 15.75 5.25 13.3993 5.25 10.5C5.25 7.60069 7.60069 5.25 10.5 5.25C11.8383 5.25 13.0559 5.75487 13.9829 6.57956L16.4579 4.10462C14.8951 2.64819 12.8047 1.75 10.5 1.75C5.66781 1.75 1.75 5.66781 1.75 10.5C1.75 15.3322 5.66781 19.25 10.5 19.25C15.3322 19.25 19.25 15.3322 19.25 10.5C19.25 9.91331 19.1896 9.34062 19.0798 8.78631Z"
-            fill="#FFC107" />
-          <path
-            d="M2.75888 6.42731L5.63369 8.53563C6.41157 6.60975 8.29544 5.25 10.5 5.25C11.8383 5.25 13.0559 5.75488 13.9829 6.57956L16.4579 4.10463C14.8951 2.64819 12.8048 1.75 10.5 1.75C7.13913 1.75 4.22451 3.64744 2.75888 6.42731Z"
-            fill="#FF3D00" />
-          <path
-            d="M10.5 19.25C12.7601 19.25 14.8138 18.3851 16.3665 16.9785L13.6583 14.6869C12.7798 15.3523 11.6878 15.75 10.5 15.75C8.22414 15.75 6.2917 14.2988 5.5637 12.2736L2.71033 14.4721C4.15845 17.3057 7.09933 19.25 10.5 19.25Z"
-            fill="#4CAF50" />
-          <path
-            d="M19.0798 8.78631H18.375V8.75H10.5V12.25H15.4451C15.0986 13.2287 14.469 14.0726 13.657 14.6873L13.6583 14.6864L16.3664 16.9781C16.1748 17.1522 19.25 14.875 19.25 10.5C19.25 9.91331 19.1896 9.34063 19.0798 8.78631Z"
-            fill="#1976D2" />
-        </svg>
-      </button>
     </div>
   </header>
 
   <main class="w3-container">
-    <div>
-      <div class="content">
-        <div class="text-box">
-          <h3 class="h3-welcome">
-            👋 Seja bem-vindo
-          </h3>
-          <h1 class="h1-pitche">
-            Notícias sobre <br>
-            o mundo do <br>
-            <span class="span-highline">JavaScript</span>
-          </h1>
-          <p>
-            Garanta o acesso a todas as publicações <br>
-            <span class="span-highline">por R$ 29,90 / mês</span>
-          </p>
-
-          <button class="w3-round-xxlarge btn-subscribe-now">
-            Assinar agora!
-          </button>
+    <section id="home">
+      <div class="w3-row" style="max-width: 1120px; margin: 40px auto;">
+        <div class="w3-half">
+          <div class="textbox">
+            <h3 style="font-weight: bold;">👋 Seja bem-vindo</h3>
+            <h1 style="line-height: normal; font-weight: bold;">
+              Notícias sobre <br>
+              o mundo do <br> 
+              <span style="color: #FACC15;">JavaScript</span> 
+            </h1>
+            <p>
+              Garanta o acesso a todas as publicações <br>
+              <span style="color: #FACC15; font-weight: bold;">por R$ 29,90 / mês</span>
+            </p>
+          </div>
         </div>
-        <div class="illustration-box">
-          <img src="./assets/illustration.png" alt="Duas pessoas lendo jornal">
+        <div class="w3-half">
+          <img src="./assets/illustration.png" alt="" style="max-width: 500px; width: 100%;">
         </div>
       </div>
-    </div>
-
-    <section id="plans">
-      <h1 class="h1-plans">Planos para Assinatura</h1>
-      <div class="w3-row" style="max-width: 1120px; margin: 0 auto;">
-        <div class="w3-container w3-third">
-          <div class="w3-card-4 card">
-            <div class=" header-plans">
-              <h4>Free</h4>
-              <img src="assets/basic.png" alt="" class="card-img">
-            </div>
-            <div class="mt5 d-flex-col">
-              <p>Aproveite todos os benefícios relativo a este plano</p>
-              <div class="card-labels-group">
-                <div class="card-label">
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z"
-                      fill="#FACC15" />
-                  </svg>
-                  <p>Acesso a algumas publicações pagas</p>
-                </div>
-              </div>
-              <button class="w3-btn w3-round-xxlarge btn-subscription">Assinar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="w3-container w3-third">
-          <div class="w3-card-4 card">
-            <div class="header-plans">
-              <h4>R$29,90/mês</h4>
-              <img src="assets/default.png" alt="" class="card-img">
-            </div>
-            <div class="mt5 d-flex-col">
-              <p>Aproveite todos os benefícios relativo a este plano</p>
-              <div class="card-labels-group">
-                <div class="card-label">
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z"
-                      fill="#FACC15" />
-                  </svg>
-                  <p> Acesso a todas publicações pagas </p>
-                </div>
-                <div class="card-label">
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z"
-                      fill="#FACC15" />
-                  </svg>
-                  <p>Selo de verificação no perfil</p>
-                </div>
-              </div>
-              <button class="w3-btn w3-round-xxlarge btn-subscription">Assinar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="w3-container w3-third">
-          <!-- Plano premium  -->
-          <div class="w3-card-4 card">
-            <div class="header-plans">
-              <h4>R$90,90/mês</h4>
-              <img src="assets/premium.png" alt="" class="card-img">
-            </div>
-            <div class="mt5 d-flex-col">
-              <p>Aproveite todos os benefícios relativo a este plano</p>
+    </section>  
     
-              <div class="card-labels-group">
-                <div class="card-label">
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z"
-                      fill="#FACC15" />
-                  </svg>
-                  <p>Acesso a todas publicações pagas</p>
-                </div>
-                <div class="card-label">
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z"
-                      fill="#FACC15" />
-                  </svg>
-                  <p>Selo de verificação no perfil</p>
-                </div>
-                <div class="card-label">
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z"
-                      fill="#FACC15" />
-                  </svg>
-                  <p>+ acesso offiline</p>
-                </div>
+
+    <section id="plans" style="margin: 80px 0;">
+      <h3 style="text-align: center; font-weight: bold;">Planos para Assinatura</h3>
+      <div class="w3-row" style="max-width: 1120px; margin: 0 auto;">
+
+        <div class="w3-container w3-third">
+          <div class="w3-card-4 w3-padding" style="position: relative; background: #1E293B; border-radius: 8px;">
+            <h3>Free</h3>
+            <img src="./assets/basic.png" alt="Plano Básico" style="position: absolute; height: 48px; width: 120px; right: 0; top: 0;">
+            <p>
+              Aproveite todos os benefícios relativo a este plano
+            </p>
+            <div class="w3-row">
+              <div class="w3-col" style="width: 25px; margin: 16px 16px 16px 0;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z" fill="#FACC15"/>
+                </svg>
               </div>
-              <button class="w3-btn w3-round-xxlarge btn-subscription">Assinar</button>
+              <div class="w3-col" style="width: auto;"> 
+                <p>Acesso a algumas publicações pagas</p>
+              </div>
             </div>
+            <button class="w3-btn w3-round-xxlarge btn-send" style="width: 100%; color: #020617; background: #FACC15; font-weight: bold; margin: 12px 0;">Assinar</button>
           </div>
         </div>
-  
-  
+
+        <div class="w3-container w3-third">
+          <div class="w3-card-4 w3-padding" style="position: relative; background: #1E293B; border-radius: 8px;">
+            <h3>R$29,90</h3>
+            <img src="./assets/default.png" alt="Plano Básico" style="position: absolute; height: 48px; width: 120px; right: 0; top: 0;">
+            <p>
+              Aproveite todos os benefícios relativo a este plano
+            </p>
+            <div class="w3-row">
+              <div class="w3-col" style="width: 25px; margin: 16px 16px 16px 0;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z" fill="#FACC15"/>
+                </svg>
+              </div>
+              <div class="w3-col" style="width: auto;"> 
+                <p>Acesso a algumas publicações pagas</p>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col" style="width: 25px; margin: 16px 16px 16px 0;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z" fill="#FACC15"/>
+                </svg>
+              </div>
+              <div class="w3-col" style="width: auto;"> 
+                <p>Selo de verificação no perfil</p>
+              </div>
+            </div>
+            <button class="w3-btn w3-round-xxlarge btn-send" style="width: 100%; color: #020617; background: #9333EA; font-weight: bold; margin: 12px 0;">Assinar</button>
+          </div>
+        </div>
+
+        <div class="w3-container w3-third">
+          <div class="w3-card-4 w3-padding" style="position: relative; background: #1E293B; border-radius: 8px;">
+            <h3>R$90,90</h3>
+            <img src="./assets/premium.png" alt="Plano Básico" style="position: absolute; height: 48px; width: 120px; right: 0; top: 0;">
+            <p>
+              Aproveite todos os benefícios relativo a este plano
+            </p>
+            <div class="w3-row">
+              <div class="w3-col" style="width: 25px; margin: 16px 16px 16px 0;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z" fill="#FACC15"/>
+                </svg>
+              </div>
+              <div class="w3-col" style="width: auto;"> 
+                <p>Acesso a algumas publicações pagas</p>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col" style="width: 25px; margin: 16px 16px 16px 0;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z" fill="#FACC15"/>
+                </svg>
+              </div>
+              <div class="w3-col" style="width: auto;"> 
+                <p>Selo de verificação no perfil</p>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col" style="width: 25px; margin: 16px 16px 16px 0;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 1C6.1585 1 1 6.1585 1 12.5C1 18.8415 6.1585 24 12.5 24C18.8415 24 24 18.8415 24 12.5C24 10.22 23.3301 8.09467 22.1816 6.30567L21.4971 7.11426C22.4446 8.69126 23 10.53 23 12.5C23 18.2895 18.2895 23 12.5 23C6.7105 23 2 18.2895 2 12.5C2 6.7105 6.7105 2 12.5 2C15.2215 2 17.697 3.04989 19.5645 4.75489L20.2188 3.98242C18.1763 2.12993 15.4675 1 12.5 1ZM21.6182 3.87696L11.957 15.2773L7.89062 11.4844L7.20898 12.2158L12.042 16.7236L22.3818 4.52344L21.6182 3.87696Z" fill="#FACC15"/>
+                </svg>
+              </div>
+              <div class="w3-col" style="width: auto;"> 
+                <p>+ acesso offiline</p>
+              </div>
+            </div>
+            <button class="w3-btn w3-round-xxlarge btn-send" style="width: 100%; color: #020617; background: #DB2777; font-weight: bold; margin: 12px 0;">Assinar</button>
+          </div>
+        </div>
       </div>
     </section>
       
@@ -193,41 +154,42 @@
       <div class="" style="max-width: 1120px; margin: 80px auto;">
         <div class="w3-row">
           <div class="w3-col">
-            <form class="form-container">
+            <form class="w3-card w3-container w3-padding-16 w3-padding-32" style="background: #1E293B; border-radius: 8px;">
               <div class="form-header">
-                <div class="form-header-title">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.99999 3.99997H20C21.1001 3.99997 22.0001 4.89997 22.0001 5.99997V18C22.0001 19.0999 21.1001 19.9999 20 19.9999H3.99999C2.9 19.9999 2 19.0999 2 18V5.99997C2 4.89997 2.9 3.99997 3.99999 3.99997Z" stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M22.0001 6L12 13L2 6" stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                
-                  <h3>Contato</h3>
+                <div class="w3-row">
+                  <div class="w3-col" style="width: 20px; margin: 16px 16px 16px 0;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.99999 3.99997H20C21.1001 3.99997 22.0001 4.89997 22.0001 5.99997V18C22.0001 19.0999 21.1001 19.9999 20 19.9999H3.99999C2.9 19.9999 2 19.0999 2 18V5.99997C2 4.89997 2.9 3.99997 3.99999 3.99997Z" stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22.0001 6L12 13L2 6" stroke="#FACC15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                
+                  </div>
+                  <div class="w3-col" style="width: auto;"> 
+                    <h3 style="font-weight: bold;">Contato</h3>
+                  </div>
                 </div>
-                <p>
+                <span style="display: block; margin-bottom: 16px;">
                   Entre em contato conosco preenchendo o formulário abaixo:
-                </p>
+                </span>
               </div>
   
               <label>Nome completo</label>
-              <input class="w3-input" type="text" placeholder="Nome">
+              <input class="w3-input" type="text" placeholder="Nome" style="margin-bottom: 16px;">
               
               <label>Email</label>
-              <input class="w3-input" type="email" placeholder="fulanodetal@email.com">
+              <input class="w3-input" type="email" placeholder="fulanodetal@email.com" style="margin-bottom: 16px;">
   
               <label>Assunto</label>
-              <input class="w3-input" type="text" placeholder="Ex: patrocínio">
+              <input class="w3-input" type="text" placeholder="Ex: patrocínio" style="margin-bottom: 16px;">
   
-              <button class="w3-btn w3-round-xxlarge btn-send">Enviar</button>
+              <button class="w3-btn w3-round-xxlarge btn-send" style="width: 100%; color: #020617; background: #FACC15; font-weight: bold;">Enviar</button>
             </form>
           </div>
-          <!-- <div class="w3-col s6">
-            <img style="width: 100%;" src="./assets/illustration-contact.png" alt="Mulher olhando para o formulário de contato">
-          </div> -->
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="footer" class="w3-container">
+  <footer id="footer" class="w3-container" style="margin-top: 160px; background: #1E293B;">
     <div style="max-width: 1120px; margin: 40px auto;">
       <p style="text-align: center;">
         JS.news all rights reserverd 2024
