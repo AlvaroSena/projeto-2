@@ -28,7 +28,7 @@ a {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .btn-show-sidebar {
     display: block;
   }
@@ -95,7 +95,7 @@ li {
   padding: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header .btn-sign-in::after {
     content: 'Sign in with Google';
     font-weight: bold;
@@ -103,7 +103,7 @@ li {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   nav {
     display: none;
   }
@@ -119,7 +119,7 @@ li {
 }
 
 .h1-pitche {
-  font-size: 4.5rem;
+  font-size: 4vw;
   font-weight: bold;
   line-height: normal;
 }
@@ -137,9 +137,16 @@ li {
   margin: 5rem auto;
   display: flex;
   align-items: center;
+  gap: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .h1-pitche {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 767px) {
   .content {
     flex-direction: column;
     align-items: flex-start;
@@ -149,28 +156,31 @@ li {
   .content .illustration-box {
     order: -1;
   }
-
-  .content .illustration-box img {
-    display: none;
-  }
-
-  .h1-pitche {
-    font-size: 3rem;
-  }
 }
 
 .content .text-box {
   flex: 1;
   padding-right: 20px;
+  margin: 0 auto;
 } 
 
 .content .text-box .h3-welcome {
   font-weight: bold;
+  font-size: 1.5em;
+}
+
+.content .illustration-box {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .content .illustration-box img {
   max-width: 500px;
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 :root {
@@ -193,8 +203,6 @@ li {
   text-align: center;
   margin: 80px 0;
   font-weight: bold;
-  font-size: 54px;
-
 }
 
 .d-grid{
@@ -205,7 +213,7 @@ li {
   gap: 46px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .d-grid {
     grid-template-columns: 1fr;
   }  
